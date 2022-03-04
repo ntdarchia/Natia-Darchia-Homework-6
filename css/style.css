@@ -1,0 +1,123 @@
+body {
+	background-color: black;
+}
+.coverImg {
+	width: 900px;
+	height: 600px;
+}
+.coverImgDiv {
+	width: 900px;
+	height: 600px;
+	margin:  auto;
+	position: relative;
+}
+.cityImg {
+	width: 300px;
+	height: 200px;
+}
+.cityImgDiv {
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.titleP {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-family: 'Helvetica' sans-serif;
+	font-size: 30px;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+/*Bomber*/
+.bomberImg {
+	width: 150px;
+	height: 150px;
+}
+.bomberDiv {
+	position: absolute;
+	left: 200px;
+	top: -50px;
+	animation: bomberMoving 2s ease-in infinite;
+}
+@keyframes bomberMoving {
+	from {top: -50px;}
+	to {top: 30px}
+}
+/*Bomb*/
+.bomb {
+	width: 50px;
+	height: 50px;
+}
+.firstBombDiv {
+	position: absolute;
+	left: 350px;
+	top: 150px;
+	animation: firstBombMoving 1s linear infinite;
+}
+@keyframes firstBombMoving {
+	from {top: 150px;}
+	to {top: 500px;}
+}
+.secondBombDiv {
+	position: absolute;
+	left: 360px;
+	top: 160px;
+	animation: secondBombMoving 1s linear 0.5s infinite;
+}
+@keyframes secondBombMoving {
+	from {top: 160px;}
+	to {top: 450px}
+}
+.thirdBombDiv {
+	position: absolute;
+	left: 355px;
+	top: 155px;
+	animation: thirdBombMoving 1.5s linear infinite;
+}
+@keyframes thirdBombMoving {
+	from {top: 155px;}
+	to {top: 500px;}
+}
+.fourthBombDiv {
+	position: absolute;
+	left: 370px;
+	top: 155px;
+	animation: fourthBombMoving 1s linear infinite;
+}
+@keyframes fourthBombMoving {
+	from {top: 155px;}
+	to {top: 500px;}
+}
+/*Left Tank*/
+.leftTank {
+	width: 200px;
+	height: 100px;
+}
+.leftTankDiv {
+	position: absolute;
+	left: 0px;
+	bottom: -35px;
+	animation: leftTankMoving 15s linear infinite;
+}
+@keyframes leftTankMoving {
+	from {left: 0px;}
+	to {left: 250px;}
+}
+/*Right Tank*/
+.rightTank {
+	width: 200px;
+	height: 100px;
+}
+.rightTankDiv {
+	position: absolute;
+	right: 0px;
+	bottom: -35px;
+	animation: rightTankMoving 20s linear infinite;
+}
+@keyframes rightTankMoving {
+	from {right: 0px;}
+	to {right: 300px;}
+}
